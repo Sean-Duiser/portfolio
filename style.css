@@ -54,21 +54,9 @@ h2 {
 section {
     display: flex;
     flex-wrap: wrap;
-    text-align:center;
-    border: 4px solid;
+    border: 4px pink solid;
     margin: 15px 0 15px 0;
     width: 100%;
-    padding: 10px;
-    float: right;
-}
-
-#AboutMe img {
-    display: flexbox;
-    padding: 10px;
-    border: 5px black solid;
-    margin: 5px;
-    max-width: 100%;
-    float: left;
 }
 
 #featured {
