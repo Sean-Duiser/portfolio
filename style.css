@@ -52,7 +52,7 @@ h2 {
 }
 
 section {
-    display: flexbox;
+    display: flex;
     flex-wrap: wrap;
     text-align:center;
     border: 4px solid;
@@ -133,7 +133,6 @@ footer {
     article {
         min-width: 50%;
     }
-
     header {
         width: 100%;
         display:flex;
@@ -157,6 +156,9 @@ footer {
         justify-content: center;
         align-items: center;
         height: 100%;
+    }
+    article {
+        min-width: 50%;
     }
     header {
         width: 100%;
