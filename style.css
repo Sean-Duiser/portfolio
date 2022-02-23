@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -90,17 +92,17 @@ section {
 }
 
 #otherprojects {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
     padding: 10px;
     border: 5px blue solid;
-    width: 35%;
-    min-height: 300px;
+    width: 50%;
+    min-height: 600px;
+    min-width: 600px;
     background-image: url(https://via.placeholder.com/1080);
-    margin: 5px 0 5px 0;
+    margin: 0 auto;
     background-position:center;
     background-repeat: no-repeat;
-    align-items: center;
+    align-items:center;
 }
 
 #otherprojects p {
@@ -121,13 +123,17 @@ footer {
 
 @media screen and (max-width: 640px) {
     section {
-        display: flex;
+        display: flexbox;
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
-        height: 100%;
     }
+
+    article {
+        min-width: 50%;
+    }
+
     header {
         width: 100%;
         display:flex;
