@@ -10,17 +10,12 @@ header {
     font-size: 24px;
     background-color: slategray;
     align-items:center;
-    position: sticky;
     justify-content:space-between;
     border: 2px solid lightgreen;
 }
 
 header img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0 10px 220px;
+    margin: 10px 0 10px 0;
     width: 150px;
 }
 
@@ -39,7 +34,7 @@ nav a {
     padding: 4px;
     color: hotpink;
     background-color: rgba(0, 0, 0, 0.486);
-    font-size:24px;
+    font-size:18px;
 }
 
 body {
@@ -47,8 +42,8 @@ body {
 }
 
 h2 {
-    justify-content: center;
     display: flex;
+    justify-content: center;
 }
 
 section {
