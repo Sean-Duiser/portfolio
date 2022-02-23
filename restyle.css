@@ -9,6 +9,8 @@ main,
 footer {
     display: flex;
     flex-wrap: wrap;    align-items: center;
+    border: 3px solid lightgreen;
+    margin: 3px;
 }
 
 header {
@@ -25,17 +27,38 @@ header img {
     width: 150px;
 }
 
+h1,
+header img,
+header nav {
+    border: 1px solid purple;
+}
+
+header nav {
+    padding: 5px;
+}
+
+nav a {
+    margin: 5px;
+    border: 1px solid cyan;
+    text-decoration: none;
+}
+
 section {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+    border: 2px solid orangered;
+    align-items: center;
 }
 
-.article {
-
+article {
+    border: 1px solid blue;
+    width: 24%;
+    margin: 1px;
 }
 
+/* tablet */
 @media screen and (max-width: 1008px) {
     section {
         display: flex;
@@ -53,8 +76,12 @@ section {
         width: 35%;
         text-align: center;
     }
+    section nav {
+        display: flex;
+    }
 }
 
+/* mobile */
 @media screen and (max-width: 640px) {
     section {
         display: flex;
