@@ -27,7 +27,7 @@ nav a {
     color: orange;
 }
 
-#Contact nav a {
+.Contact nav a {
     margin: 10px;
     text-decoration: none;
     border-radius: 5px;
@@ -43,18 +43,21 @@ body {
 
 h2 {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 200;
+    justify-content: space-around;
+    color: maroon;
 }
 
 section {
-    display: flex;
+    display: flexbox;
     flex-wrap: wrap;
     border: 4px pink solid;
     margin: 15px 0 15px 0;
     width: 100%;
 }
 
-#featured {
+.featured {
     display: flex;
     padding: 10px;
     border: 5px blue solid;
@@ -67,32 +70,35 @@ section {
     align-items: center;
     }
 
-#featured p {
+.featured p {
     border: lightgreen 2px solid;
     border-radius: 4px;
     padding: 10px 10px 10px 0;
     background-color: rgba(37, 255, 37, 0.596);
 }
 
-#otherprojects {
+.otherprojects {
     display: flex;
-    padding: 10px;
+    flex-direction: row;
     border: 5px blue solid;
     width: 50%;
-    min-height: 600px;
-    min-width: 600px;
     background-image: url(https://via.placeholder.com/1080);
-    margin: 0 auto;
-    background-position:center;
-    background-repeat: no-repeat;
-    align-items:center;
 }
 
-#otherprojects p {
+.otherprojects p {
     border: lightgreen 2px solid;
     border-radius: 4px;
     padding: 10px 10px 10px 0;
     background-color: rgba(37, 255, 37, 0.596);
+}
+
+.Contact {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    border: 4px orange solid;
 }
 
 footer {
@@ -106,25 +112,33 @@ footer {
 
 @media screen and (max-width: 640px) {
     section {
-        display: flexbox;
-        flex-direction: column;
+        display: inline-flex;
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
     }
 
     article {
+        display: block;
         min-width: 50%;
     }
+
+    .Contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     header {
         width: 100%;
         display:flex;
         flex-wrap: wrap;
     }
+
     nav {
         display: flex;
         flex-direction: column;
     }
+
     img {
         width: 100%;
     }
@@ -140,19 +154,23 @@ footer {
         align-items: center;
         height: 100%;
     }
+
     article {
         min-width: 50%;
     }
+
     header {
         width: 100%;
         display: block;
         text-align: center;
     }
+
     nav {
         display: flex;
         flex-direction: flex;
         justify-content: space-around;
     }
+
     img {
         width: 100%;
     }
