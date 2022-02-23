@@ -13,11 +13,31 @@ header {
     border: 2px solid lightgreen;
 }
 
+header img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 220px;
+    width: 150px;
+}
+
 nav a {
     margin: 10px;
     text-decoration: none;
     border-radius: 5px;
     padding: 4px;
+    color: orange;
+}
+
+#Contact nav a {
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 4px;
+    color: hotpink;
+    background-color: rgba(0, 0, 0, 0.486);
+    font-size:24px;
 }
 
 body {
@@ -45,13 +65,49 @@ section {
     padding: 10px;
     border: 5px black solid;
     margin: 5px;
-    max-width: 90%;
+    max-width: 100%;
     float: left;
 }
 
 #featured {
+    display: flex;
+    padding: 10px;
+    border: 5px blue solid;
     width: 100%;
-    background-image: url(https://via.placeholder.com/900);
+    min-height: 600px;
+    background-image: url(https://via.placeholder.com/1080);
+    margin: 0 auto;
+    background-position:center;
+    background-repeat: no-repeat;
+    align-items: center;
+    }
+
+#featured p {
+    border: lightgreen 2px solid;
+    border-radius: 4px;
+    padding: 10px 10px 10px 0;
+    background-color: rgba(37, 255, 37, 0.596);
+}
+
+#otherprojects {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 5px blue solid;
+    width: 35%;
+    min-height: 300px;
+    background-image: url(https://via.placeholder.com/1080);
+    margin: 5px 0 5px 0;
+    background-position:center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+#otherprojects p {
+    border: lightgreen 2px solid;
+    border-radius: 4px;
+    padding: 10px 10px 10px 0;
+    background-color: rgba(37, 255, 37, 0.596);
 }
 
 footer {
@@ -74,8 +130,8 @@ footer {
     }
     header {
         width: 100%;
-        display:block;
-        text-align: center;
+        display:flex;
+        flex-wrap: wrap;
     }
     nav {
         display: flex;
@@ -105,6 +161,9 @@ footer {
         display: flex;
         flex-direction: flex;
         justify-content: space-around;
+    }
+    img {
+        width: 100%;
     }
 }
                     
