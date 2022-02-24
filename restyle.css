@@ -17,6 +17,9 @@ p {
     text-decoration: none;
 }
 
+p:hover {
+    color: var(--trim-color);
+}
 a {
     text-decoration: dashed;
     color: var(--secondary-color);
