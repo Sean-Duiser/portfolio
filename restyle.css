@@ -77,6 +77,7 @@ header {
 
 h2 {
     font-size: 48px;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -101,6 +102,7 @@ nav a:hover {
 #AboutMe {
     display: block;
     text-align: center;
+    width: 60%;
 }
 
 section{
@@ -120,6 +122,10 @@ section:hover {
 
 #MyWork {
     text-align: center;
+}
+
+#MyWork p {
+    margin-bottom: 15px;
 }
 
 #MyWork img:hover {
