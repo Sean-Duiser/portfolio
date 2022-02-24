@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all 250ms ease-in;
 }
 
 header,
@@ -11,30 +12,16 @@ footer {
     flex-wrap: wrap;    align-items: center;
     border: 3px solid lightgreen;
     margin: 3px;
+    justify-content: space-around;
 }
 
 header {
     flex-direction: row;
-    justify-content: space-around;
 }
 
 main,
 footer {
     flex-direction: column;
-}
-
-header img {
-    width: 150px;
-}
-
-h1,
-header img,
-header nav {
-    border: 1px solid purple;
-}
-
-header nav {
-    padding: 5px;
 }
 
 nav a {
@@ -43,7 +30,13 @@ nav a {
     text-decoration: none;
 }
 
-section {
+#AboutMe {
+    display: block;
+    text-align: center;
+    
+}
+
+section{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -52,10 +45,50 @@ section {
     align-items: center;
 }
 
-article {
-    border: 1px solid blue;
-    width: 24%;
-    margin: 1px;
+#MyWork {
+    text-align: center;
+}
+
+#MyWork img:hover {
+    opacity: 0.8;
+}
+
+.alpha,
+.bravo,
+.charlie,
+.delta {
+    background-image: url("https://picsum.photos/400");
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin: 2px;
+}
+
+.alpha {
+    background-image: url(./assets/images/largeSEO.jpg);
+}
+
+.bravo {
+    background-image: url(./assets/images/gameboy.jpg);
+}
+
+.charlie {
+    background-image: url(./assets/images/wednesday.jpg);
+}
+
+.delta {
+    background-image: url(./assets/images/learning.jpg);
+}
+
+article:hover {
+    opacity: 0.8;
+}
+
+article p {
+    color: blue;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 /* tablet */
@@ -65,7 +98,6 @@ article {
         flex-direction: row;
         flex-wrap: wrap;
         width: 50%;
-        justify-content: space-evenly;
         height: 100%;
         align-items: center;
     }
@@ -78,6 +110,9 @@ article {
     }
     section nav {
         display: flex;
+    }
+    #AboutMe {
+        width: 100%;
     }
 }
 
