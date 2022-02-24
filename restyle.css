@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    transition: all 250ms ease-in;
+    transition: all 250ms ease-in-out;
 }
 
 header,
@@ -43,6 +43,7 @@ section{
     justify-content: space-around;
     border: 2px solid orangered;
     align-items: center;
+    padding: 5px;
 }
 
 #MyWork {
@@ -51,6 +52,7 @@ section{
 
 #MyWork img:hover {
     opacity: 0.8;
+    transform: scale(1.1);
 }
 
 .alpha,
@@ -83,12 +85,20 @@ section{
 
 article:hover {
     opacity: 0.8;
+    border-radius: 15px;
+    transform: rotate(3deg);
+}
+
+article {
+    color: rgb(255, 60, 223);
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
 }
 
 article p {
-    color: blue;
-    font-weight: bold;
-    font-size: 24px;
+    background-color: rgb(69, 69, 69);
+    border-radius: 0 0 15px 15px;
 }
 
 /* tablet */
