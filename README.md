@@ -9,5 +9,10 @@ This portfolio is meant to display my skills and talents as a software engineer.
 ## Technologies Utilized
 This site uses a combination of HTML and CSS.
 
+## Authors and Acknowledgements
+Sean Duiser:
+sean.duiser.develop@gmail.com
+704-296-8335
+
 ## Deployed Site
 [link to the live site](*PLACEHOLDER*) 
