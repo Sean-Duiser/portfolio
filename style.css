@@ -17,6 +17,15 @@ p {
     text-decoration: none;
 }
 
+#skills {
+    display: flex;
+}
+
+ul {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 p:hover {
     color: var(--trim-color);
 }
