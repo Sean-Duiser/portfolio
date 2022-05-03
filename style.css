@@ -94,9 +94,10 @@ nav a:hover {
 
 #AboutMe {
     display: flex;
+    flex-direction: column;
     text-align: center;
     width: 60%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 section {
