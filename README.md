@@ -19,4 +19,4 @@ sean.duiser.develop@gmail.com
 >>>>>>> 28aaff7bb0c47d210036cf7eb560fec558555e28
 
 ## Deployed Site
-https://sean-duiser.github.io/portfolio-homework/
+https://sean-duiser.github.io/portfolio/
